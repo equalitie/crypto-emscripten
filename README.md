@@ -1,15 +1,15 @@
 gcrypt and otr in javascript
 ===================================================
 
-A build script to compile [GNU Libgcrypt][1] and [Off-the-Record Messaging][2] using the awsome [Emscripten][3] cross-compiler.
+A build script to compile [GNU Libgcrypt][1] and [Off-the-Record Messaging][2], and [eQ (n+1)sec][3] library using the awsome [Emscripten][4] cross-compiler.
 
 [1]: http://www.gnu.org/software/libgcrypt/ "gcrypt"
 [2]: http://www.cypherpunks.ca/otr/ "OTR"
+[3]: https://github.com/equalitie/np1sec
 [3]: http://emscripten.org "Emscripten"
 
-
 ### Building the libraries
-[Setup Emscripten](https://github.com/kripken/emscripten/wiki/Tutorial) on your system. 
+[Setup Emscripten](http://kripken.github.io/emscripten-site/docs/getting_started/Tutorial.html) on your system. 
 
 Run the build script (it will try to find emscripten in the following locations; *path specified on the command line*, *EMSCRIPTEN_ROOT* environment variable, and finally in from the config file *~/.emscripten*.)
 This will configure and compile the libraries into llvm bitcode.
